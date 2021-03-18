@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
     }
 
     @Override
-    protected void onInit(int status) {
+    public void onInit(int status) {
         tts.speak("Hallo!", TextToSpeech.QUEUE_FLUSH, null);
     }
 }
